@@ -6,4 +6,4 @@ for digit1 in range(10):
             if (digit1 == 9 and digit2 == 8) or (digit1 == 8 and digit2 == 9):
                 print("{:02}".format(number))
             else:
-                print("{:02}".format(number), ",", end="")
+                print("{:02}, ".format(number), end="")
