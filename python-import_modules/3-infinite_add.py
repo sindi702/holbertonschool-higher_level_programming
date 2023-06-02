@@ -6,4 +6,4 @@ if __name__ == "__main__":
     while i < len(sys.argv):
         sum += int(sys.argv[i])
         i += 1
-        print(f"{sum}")
+        print("{}".format(sum)
