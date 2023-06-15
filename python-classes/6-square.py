@@ -24,7 +24,6 @@ class Square:
     @property
     def size(self):
         return self.__size
-    
     '''change size func'''
     @size.setter
     def size(self, value):
