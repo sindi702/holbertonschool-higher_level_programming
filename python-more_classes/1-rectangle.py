@@ -16,6 +16,7 @@ class Rectangle:
     def width(self):
         '''width'''
         self.__width
+
     @height.setter
     def height(self, value):
         if type(value) is not int:
