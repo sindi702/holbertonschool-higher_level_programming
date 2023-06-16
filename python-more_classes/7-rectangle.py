@@ -39,7 +39,7 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         else:
             self.__height = value
-    
+
     @width.setter
     def width(self, value):
         if type(value) is not int:
@@ -58,20 +58,20 @@ class Rectangle:
         else:
             return 2 * self.__width + 2 * self.__height
 
-     def __str__(self):
-         string = ""
-         if self.__height == 0 or self.__width == 0:
-             return string
-         for i in range(self.__height):
-             for j in range(self.__width):
-                 string += str(self.print_symbol)
-             if i + 1 != self.__height:
-                 string += '\n'
-         return string
+    def __str__(self):
+        string = ""
+        if self.__height == 0 or self.__width == 0:
+            return string
+        for i in range(self.__height):
+            for j in range(self.__width):
+                string += str(self.print_symbol)
+            if i + 1 != self.__height:
+                string += '\n'
+        return string
 
-     def __repr__(self):
-         return f'Rectangle({self.width}, {self.height})'
+    def __repr__(self):
+        return f'Rectangle({self.width}, {self.height})'
 
-     def __del__(self):
-         print("Bye rectangle...")
-         Rectangle.number_of_instances -= 1
+    def __del__(self):
+        print("Bye rectangle...")
+        Rectangle.number_of_instances -= 1
