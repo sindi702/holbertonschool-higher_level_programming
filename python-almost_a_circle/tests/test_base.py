@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 """Test module"""
-import io, sys, unittest
+import io
+import sys
+import unittest
+import os
 from models.base import Base
 from models.rectangle import Rectangle
 from models.square import Square
