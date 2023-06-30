@@ -142,7 +142,7 @@ class TestBaseLoadFrom(unittest.TestCase):
         rect2 = Rectangle(7, 8, 9, 10, 2)
         Rectangle.save_to_file([rect1, rect2])
         list_rect = Rectangle.load_from_file()
-        self.assertEqual(str(rect1), str(list_rect[1]))
+        self.assertEqual(str(rect2), str(list_rect[1]))
 
     def test_load_from_file_first_sq(self):
         sq1 = Square(3, 4, 5, 1)
