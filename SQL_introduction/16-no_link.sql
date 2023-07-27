@@ -1,0 +1,10 @@
+-- list all records
+SELECT
+    SCORE,
+    NAME
+FROM
+    SECOND_TABLE
+WHERE
+    NAME IS NOT NULL
+ORDER BY
+    SCORE DESC;

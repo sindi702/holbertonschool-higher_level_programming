@@ -1,0 +1,10 @@
+-- select the best
+SELECT
+    SCORE,
+    NAME
+FROM
+    SECOND_TABLE
+WHERE
+    SCORE >= 10
+ORDER BY
+    SCORE DESC;

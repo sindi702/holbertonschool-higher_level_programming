@@ -1,0 +1,4 @@
+-- score to low
+DELETE FROM SECOND_TABLE
+WHERE
+    SCORE <= 5;

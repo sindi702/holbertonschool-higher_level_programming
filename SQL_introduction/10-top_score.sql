@@ -1,0 +1,8 @@
+-- list by best
+SELECT
+    SCORE,
+    NAME
+FROM
+    SECOND_TABLE
+ORDER BY
+    SCORE DESC;

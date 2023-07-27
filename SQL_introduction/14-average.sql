@@ -1,0 +1,5 @@
+-- average
+SELECT
+    AVG(SCORE) AS AVERAGE
+FROM
+    SECOND_TABLE

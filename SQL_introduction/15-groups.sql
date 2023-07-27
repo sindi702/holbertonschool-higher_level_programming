@@ -1,0 +1,10 @@
+-- number by score
+SELECT
+    SCORE,
+    COUNT(SCORE) AS NUMBER
+FROM
+    SECOND_TABLE
+GROUP BY
+    SCORE
+ORDER BY
+    SCORE DESC;
