@@ -1,0 +1,5 @@
+-- create the table
+CREATE TABLE IF NOT EXISTS FORCE_NAME (
+    ID INT,
+    NAME VARCHAR(256) NOT NULL
+);
