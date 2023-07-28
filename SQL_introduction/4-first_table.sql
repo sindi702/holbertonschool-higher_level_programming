@@ -1,5 +1,2 @@
--- create table
-CREATE TABLE IF NOT EXISTS FIRST_TABLE (
-    ID INT,
-    NAME VARCHAR(256)
-);
+-- create table if it does not exist
+CREATE TABLE IF NOT EXISTS first_table (id INT, name VARCHAR(256));
