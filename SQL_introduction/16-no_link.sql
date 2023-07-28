@@ -1,2 +1,2 @@
--- list all records
-SELECT SCORE,NAME FROM SECOND_TABLE WHERE NAME IS NOT NULL ORDER BY SCORE DESC;
+-- list all rows where name exists
+SELECT score, name FROM second_table WHERE name IS NOT NULL ORDER BY score DESC;

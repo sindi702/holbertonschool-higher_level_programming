@@ -1,6 +1,2 @@
--- udate the score
-UPDATE SECOND_TABLE
-SET
-    SCORE = 10
-WHERE
-    NAME = 'Bob';
+-- update row in table
+UPDATE second_table SET score = 10 WHERE name = 'Bob';
