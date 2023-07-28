@@ -1,13 +1,2 @@
 -- show all shows with their genres
-SELECT
-    TV_SHOWS.TITLE,
-    TV_GENRES.NAME
-FROM
-    TV_SHOWS
-    LEFT JOIN TV_SHOW_GENRES
-    ON TV_SHOWS.ID = TV_SHOW_GENRES.SHOW_ID
-    LEFT JOIN TV_GENRES
-    ON TV_SHOW_GENRES.GENRE_ID = TV_GENRES.ID
-ORDER BY
-    TV_SHOWS.TITLE,
-    TV_GENRES.NAME;
+SELECT tv_shows.title, tv_genres.name FROM tv_shows LEFT JOIN tv_show_genres ON tv_shows.id = tv_show_genres.show_id LEFT JOIN tv_genres ON tv_show_genres.genre_id = tv_genres.id ORDER BY tv_shows.title, tv_genres.name;

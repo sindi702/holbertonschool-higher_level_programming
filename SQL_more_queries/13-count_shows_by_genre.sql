@@ -1,12 +1,2 @@
 -- showing all genres movie count
-SELECT
-    TV_GENRES.NAME                 AS GENRE,
-    COUNT(TV_SHOW_GENRES.GENRE_ID) AS NUMBER_OF_SHOWS
-FROM
-    TV_GENRES
-    INNER JOIN TV_SHOW_GENRES
-    ON TV_GENRES.ID = TV_SHOW_GENRES.GENRE_ID
-GROUP BY
-    TV_SHOW_GENRES.GENRE_ID
-ORDER BY
-    NUMBER_OF_SHOWS DESC;
+SELECT tv_genres.name AS genre, COUNT(tv_show_genres.genre_id) AS number_of_shows FROM tv_genres INNER JOIN tv_show_genres ON tv_genres.id = tv_show_genres.genre_id GROUP BY tv_show_genres.genre_id ORDER BY number_of_shows DESC;

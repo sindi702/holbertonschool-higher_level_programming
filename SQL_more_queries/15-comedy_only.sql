@@ -1,12 +1,2 @@
 -- Get all comedy movies
-SELECT
-    TV_SHOWS.TITLE
-FROM
-    TV_SHOWS
-    JOIN TV_SHOW_GENRES
-    ON TV_SHOWS.ID = TV_SHOW_GENRES.SHOW_ID JOIN TV_GENRES
-    ON TV_GENRES.ID = TV_SHOW_GENRES.GENRE_ID
-WHERE
-    TV_GENRES.NAME = 'Comedy'
-ORDER BY
-    TV_SHOWS.TITLE;
+SELECT tv_shows.title FROM tv_shows JOIN tv_show_genres ON tv_shows.id = tv_show_genres.show_id JOIN tv_genres ON tv_genres.id = tv_show_genres.genre_id WHERE tv_genres.name = 'Comedy' ORDER BY tv_shows.title;
